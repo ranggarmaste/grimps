@@ -1,0 +1,147 @@
+/****************************
+ GENERAL
+****************************/
+
+.grimps-header {
+    height: 64px;
+}
+
+.grimps-content {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px !important;
+}
+
+#notif {
+    cursor: pointer;
+}
+/****************************
+ END OF GENERAL
+****************************/
+
+/****************************
+ COLORS
+****************************/
+
+.grimps-blue {
+    background-color: #04192F;
+}
+
+.grimps-gold {
+    background-color: #D79828;
+}
+
+.grimps-violet {
+    background-color: #8493C7;
+}
+
+.grimps-plain {
+    background-color: #FEF6E2;
+}
+
+.grimps-selected {
+    background-color: #2B3B4E;
+}
+
+.grimps-plain-selected {
+    background-color: #FFF9EE;
+}
+
+.grimps-white {
+    background-color: #FFF;
+}
+
+/****************************
+ END OF COLORS
+****************************/
+
+/****************************
+ TEXT/FONTS
+****************************/
+.grimps-text-alcu {
+    font-family: "Alcubierre";
+}
+
+.grimps-text-black {
+    color: #423E3E;
+}
+
+.grimps-text-lato {
+    font-family: "Lato";
+}
+
+.grimps-text-title {
+    vertical-align: middle;
+    font-size: 32px !important;
+}
+
+.grimps-text-plain {
+    color: #FEF6E2 !important;
+}
+
+.grimps-text-big {
+    font-size: 24px;
+}
+
+/****************************
+ END OF TEXT-FONTS
+****************************/
+
+/***************************
+ DASHBOARD
+****************************/
+.mdl-navigation__link {
+    font-size: 24px;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/***************************
+ END OF DASHBOARD
+****************************/
+
+/***************************
+ VERIFICATION
+****************************/
+.verification-header {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    justify-content: space-between;
+}
+
+.log-header {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 10px;
+    justify-content: space-between;
+}
+
+.verification-img {
+    width: 40px;
+    height: 40px;
+}
+
+.verification-log-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.verification-submit {
+    padding-right: 20px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.verification-selected {
+    background-color: #FFF9EE;
+}
+
+/***************************
+ END OF VERIFICATION
+****************************/
