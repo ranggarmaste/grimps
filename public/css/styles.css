@@ -255,11 +255,6 @@ _:-ms-input-placeholder, :root .demo-graph {
     margin-right: 15px;
 }
 
-td {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-}
-
 .mdl-list {
     margin: 0;
     padding: 0;
@@ -303,4 +298,8 @@ textarea {
 
 .demo-header .mdl-menu {
     width: 300px !important;
+}
+
+.dhx_cal_data {
+    line-height: normal;
 }

@@ -142,6 +142,10 @@ hr {
     background-color: #FFF9EE;
 }
 
+.mdl-cell {
+    height: calc(100vh - 64px) !important;
+}
+
 /***************************
  END OF VERIFICATION
 ****************************/
