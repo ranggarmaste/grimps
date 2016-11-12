@@ -181,3 +181,34 @@ BORDER
 /***************************
  END OF BORDER
 ****************************/
+
+/***************************
+ EXAM SCHEDULE
+****************************/
+.exam-description-card {
+    width: 95%;
+    min-height: 525px;
+    background-color: white;
+    margin: 25px 25px 0px 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.exam-date {
+    height: 70px;
+    background-color: #8393ca;
+    padding: 15px;
+}
+
+.exam-date h2 {
+    color: #fef6e0;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.exam-description {
+    padding: 15px;
+}
+
+/***************************
+ END OF EXAM SCHEDULE
+****************************/
