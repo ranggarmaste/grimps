@@ -8,9 +8,14 @@ function changeLog(id, logTitle) {
         $("#list" + i).removeClass("verification-selected");
     }
     $("#list" + id).addClass("verification-selected");
+    var selected = $("#log" + id).css('display') != 'none';
     for (var i = 1; i <= 4; i++) {
-        $("#log" + i).hide();
+        if (id != i) {
+            $("#log" + i).hide();
+        }
     }
-    $("#log" + id).show();
+    if (!selected) {
+        $("#log" + id).fadeIn();
+    }
     $("#log-title").text("LOG " + logTitle);
 }

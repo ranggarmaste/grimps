@@ -265,9 +265,9 @@ td {
     padding: 0;
 }
 
-li:hover {
+.verification-list li:hover {
     background-color: #FFF9EE !important;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .mdl-button--raised.mdl-button--colored {

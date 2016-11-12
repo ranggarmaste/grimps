@@ -41,25 +41,35 @@ limitations under the License
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
-    <link rel="canonical" href="http://www.example.com/">
--->
+    <link rel="canonical" href="http://www.example.com/">-->
 
-<link rel="stylesheet" href="public/css/material.min.css" />
-<link rel="stylesheet" href="public/css/styles.css">
-<link rel="stylesheet" href="public/css/grimps.css">
-<style>
-#view-source {
-    position: fixed;
-    display: block;
-    right: 0;
-    bottom: 0;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    z-index: 900;
-}
-</style>
+    <link rel="stylesheet" href="public/css/material.min.css" />
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/grimps.css">
+    <link rel="stylesheet" type="text/css" href="public/fonts/font_roboto/roboto.css"/>
+	<link rel="stylesheet" type="text/css" href="public/css/dhtmlxcalendar.css"/>
+	<script src="public/js/dhtmlxcalendar.js"></script>
+	<script>
+		var myCalendar;
+		function doOnLoad() {
+			myCalendar = new dhtmlXCalendarObject("calendarHere");
+			myCalendar.setDate(new Date(2013,2,1,16,0));
+			myCalendar.show();
+		}
+	</script>
+    <style>
+    #view-source {
+        position: fixed;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        z-index: 900;
+    }
+    </style>
 </head>
-<body>
+<body onload="doOnLoad();">
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="grimps-white grimps-text-alcu demo-header mdl-layout__header mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
@@ -107,7 +117,7 @@ limitations under the License
         </div>
         <main class="mdl-layout__content grimps-plain">
             <div class="mdl-grid mdl-grid--no-spacing">
-                ISI CONTENT DI SINI
+                <div id="calendarHere" style="position:relative;height:350px;"></div>
             </div>
         </main>
     </div>
