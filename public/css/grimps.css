@@ -11,6 +11,12 @@
     font-size: 16px !important;
 }
 
+.email {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #notif {
     cursor: pointer;
 }
@@ -78,30 +84,8 @@
     color: #FEF6E2 !important;
 }
 
-.grimps-text-medium {
-    font-size: 17px;
-}
-
 .grimps-text-big {
     font-size: 24px;
-}
-
-.grimps-text-large {
-    font-size: 28px;
-}
-
-.grimps-text-gold {
-    color: #D79828;
-}
-
-.grimps-text-blUe {
-    color: #04192F;
-}
-.grimps-text-red {
-    color: hotpink;
-}
-.grimps-test-center {
-    text-align: center;
 }
 
 /****************************
@@ -171,26 +155,28 @@ hr {
 /***************************
  END OF VERIFICATION
 ****************************/
-/***************************
-BORDER
-****************************/
-.grimps-border-top {
-    border-top: thick solid #D79828;
-    width: 100%;
-}
-/***************************
- END OF BORDER
-****************************/
 
 /***************************
  EXAM SCHEDULE
 ****************************/
-.exam-description-card {
-    width: 95%;
+.exam-description-card-mhs {
+    width: 50%;
     min-height: 525px;
-    background-color: white;
-    margin: 25px 25px 0px 25px;
+    background-color: pink;
+    margin: 30px auto;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.exam-description-card-dsn {
+    width: 93%;
+    min-height: 825px;
+    background-color: white;
+    margin: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.exam-desc-cell-8 {
+    min-height: 525px;
 }
 
 .exam-date {
@@ -206,9 +192,45 @@ BORDER
 }
 
 .exam-description {
-    padding: 15px;
+    padding: 15px 0px 15px 50px;
 }
 
+.exam-desc-cell-4 {
+    min-height: inherit;
+    background-color: #03192f;
+}
+
+.exam-date-title {
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+
+.date-list .mdl-navigation__link {
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.demo-layout .date-list{
+    display: inline-block;
+    width: 93%;
+    margin: 15px 0;
+}
+.date-list a{
+    cursor: pointer;
+    color: whitesmoke;
+}
+.date-list .selected {
+    background-color: lightgrey;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
 /***************************
  END OF EXAM SCHEDULE
 ****************************/
