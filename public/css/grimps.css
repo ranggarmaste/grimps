@@ -78,8 +78,30 @@
     color: #FEF6E2 !important;
 }
 
+.grimps-text-medium {
+    font-size: 17px;
+}
+
 .grimps-text-big {
     font-size: 24px;
+}
+
+.grimps-text-large {
+    font-size: 28px;
+}
+
+.grimps-text-gold {
+    color: #D79828;
+}
+
+.grimps-text-blUe {
+    color: #04192F;
+}
+.grimps-text-red {
+    color: hotpink;
+}
+.grimps-test-center {
+    text-align: center;
 }
 
 /****************************
@@ -148,4 +170,14 @@ hr {
 
 /***************************
  END OF VERIFICATION
+****************************/
+/***************************
+BORDER
+****************************/
+.grimps-border-top {
+    border-top: thick solid #D79828;
+    width: 100%;
+}
+/***************************
+ END OF BORDER
 ****************************/
