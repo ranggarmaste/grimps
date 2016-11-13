@@ -20,6 +20,10 @@
 #notif {
     cursor: pointer;
 }
+
+.hidden {
+    display: none;
+}
 /****************************
  END OF GENERAL
 ****************************/
@@ -67,12 +71,22 @@
     font-family: "Alcubierre";
 }
 
+.grimps-text-alcu-big {
+    font-family: "Alcubierre";
+    font-size: 24px;
+}
+
 .grimps-text-black {
     color: #423E3E;
 }
 
 .grimps-text-lato {
     font-family: "Lato";
+}
+
+.grimps-text-lato-medium {
+    font-family: "Lato";
+    font-size: 18px;
 }
 
 .grimps-text-title {
@@ -86,6 +100,10 @@
 
 .grimps-text-big {
     font-size: 24px;
+}
+
+.grimps-text-red {
+    color: red !important;
 }
 
 /****************************
@@ -227,10 +245,59 @@ hr {
     background-color: lightgrey;
     color: black;
 }
-
-.hidden {
-    display: none;
-}
 /***************************
  END OF EXAM SCHEDULE
+****************************/
+
+/***************************
+ NOTES
+****************************/
+
+.btn-confirm {
+    background-color: #00cc00;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-confirm:hover {
+    background-color: #33ff33;
+    cursor: pointer;
+}
+
+.btn-reject {
+    background-color: red;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-reject:hover {
+    background-color: #ff3333;
+}
+
+.confirm-buttons button {
+    color: white;
+}
+
+.confirm-buttons button:hover {
+    color: darkslategrey;
+}
+
+.td-status {
+    min-width: 220px;
+}
+
+.undo {
+    cursor: pointer;
+}
+
+.status-close {
+    text-align: right;
+    cursor: pointer;
+    margin-right: -10px;
+    margin-top: -30px;
+}
+/***************************
+ END OF NOTES
 ****************************/

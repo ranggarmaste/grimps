@@ -46,6 +46,7 @@ limitations under the License
     <link rel="stylesheet" href="public/css/material.min.css" />
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="public/css/grimps.css">
+    <link rel="stylesheet" href="public/js/jquery-ui-1.12.1.custom/jquery-ui.css">
     <style>
     #view-source {
         position: fixed;
@@ -120,13 +121,40 @@ limitations under the License
                       <tr>
                         <td class="mdl-data-table__cell--non-numeric" width="130%">
                           <div class="grimps-text-large grimps-text-blue">Change Schedule</div><br>
-                          <div class="grimps-text-medium grimps-text-alcu">Implementasi Algo XXX - Rangga</div>
+                          <div class="grimps-text-medium grimps-text-black grimps-text-lato-medium">"Implementasi Algo XXX" - <i>Rangga / 13514068</i></div>
                           <div class="grimps-text-big grimps-text-blUe">Move to</div>
-                          <div class="grimps-text-medium grimps-text-alcu">Saturday, 12 November 2016</div>
-                          <div class="grimps-text-medium grimps-text-alcu">14.00</div>
+                          <div class="grimps-text-medium grimps-text-lato">Saturday, 12 November 2016</div>
+                          <div class="grimps-text-medium grimps-text-lato">14.00</div>
                         </td>
-                        <td class="mdl-data-table__cell--non-numeric">
-                          <div class="grimps-text-medium grimps-text-alcu grimps-text-red">Pending
+                        <td class="mdl-data-table__cell--non-numeric td-status">
+                            <div class="grimps-text-medium grimps-text-lato grimps-text-red">Pending</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric" width="130%">
+                          <div class="grimps-text-large grimps-text-blue">Change Schedule</div><br>
+                          <div class="grimps-text-medium grimps-text-black grimps-text-lato-medium">"How to Win Election when You Have Deleted e-mails" - <i>Hillary Clinton / 13510911</i></div>
+                          <div class="grimps-text-big grimps-text-blUe">Move to</div>
+                          <div class="grimps-text-medium grimps-text-lato">Saturday, 12 November 2016</div>
+                          <div class="grimps-text-medium grimps-text-lato">16.00</div>
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric td-status">
+                            <div class="status-opt">
+                                <div class="grimps-text-medium grimps-text-lato grimps-text-red requestby">Request Made By: <b>FBI</b></div>
+                                <div class="confirm-buttons">
+                                    <button class="btn-confirm mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect grimps-text-alcu">
+                                      CONFIRM
+                                    </button>
+                                    <button class="btn-reject mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect grimps-text-alcu">
+                                      REJECT
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="status-undo">
+                                <div class="status-close"><i class="material-icons">close</i></div>
+                                <span class="result"></span><br>
+                                <span class="undo"><i class="material-icons">undo</i>undo</span>
+                            </div>
                         </td>
                       </tr>
                     </tbody>
@@ -136,6 +164,7 @@ limitations under the License
     </div>
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/material.min.js"></script>
-    <script src="public/js/verification.js"></script>
+    <script src="public/js/notes.js"></script>
+    <script src="public/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 </body>
 </html>
