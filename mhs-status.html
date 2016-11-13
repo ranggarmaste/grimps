@@ -65,7 +65,7 @@ limitations under the License
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="grimps-white grimps-text-alcu demo-header mdl-layout__header mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-                <div class="grimps-text-title"><i class="material-icons mdl-badge">assignment</i> VERIFY 13514068</div>
+                <div class="grimps-text-title"><img src="images/completed.png" style="height: 30px;"> VERIFICATION STATUS</div>
                 <div class="mdl-layout-spacer"></div>
                 <!-- Left aligned menu below button -->
                 <div id="notif" class="material-icons mdl-badge mdl-badge--overlap" data-badge="5" style="margin-right: 30px">
@@ -84,13 +84,13 @@ limitations under the License
                 <div class="user-info">
                     <img src="images/user.jpg" class="demo-avatar">
                     <div>
-                        <span class="grimps-text-lato grimps-text-big">Hillary</span><br>
-                        <span>Admin</span>
+                        <span class="grimps-text-lato grimps-text-big">Rangga</span><br>
+                        <span>Student</span>
                     </div>
                 </div>
                 <div class="demo-avatar-dropdown">
                     <div class="mdl-layout-spacer"></div>
-                    <span>hillary@example.com</span>
+                    <span>rangga@example.com</span>
                     <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                         <i class="material-icons" role="presentation">arrow_drop_down</i>
                         <span class="visuallyhidden">Accounts</span>
@@ -103,9 +103,9 @@ limitations under the License
                 <hr>
             </header>
             <nav class="grimps-text-alcu grimps-text-title demo-navigation mdl-navigation">
-                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="verifikasi.html"><i class="material-icons">assignment</i>VERIFICATION</a>
-                <a class="mdl-navigation__link grimps-text-plain" href="tu_calender.html"><i class="material-icons">alarm</i>CALENDAR</a>
-                <a class="mdl-navigation__link grimps-text-plain" href="tu_build.html"><i class="material-icons">create</i>BUILD</a>
+                <a class="mdl-navigation__link grimps-text-plain" href="mhs-jadwalsidang.html"><i class="material-icons">list</i>EXAM SCHEDULE</a>
+                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="mhs-status.html"><i class="material-icons">verified_user</i>STATUS</a>
+                <a class="mdl-navigation__link grimps-text-plain" href="mhs-notes.html"><i class="material-icons">content_paste</i>NOTES</a>
             </nav>
         </div>
         <main class="mdl-layout__content grimps-plain">
@@ -123,14 +123,7 @@ limitations under the License
                             </span>
                             <div class="mdl-layout-spacer"></div>
                             <span class="mdl-list__item-secondary-action">
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option11" style="margin-right: 30px">
-                                    <img class="verification-img" src="images/yes.png">
-                                    <input type="radio" id="option11" name="option1" class="mdl-radio__button">
-                                </label>
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option12" style="text-align: right">
-                                    <img class="verification-img" src="images/no.png">
-                                    <input type="radio" id="option12" name="option1" class="mdl-radio__button" checked>
-                                </label>
+                                <img class="verification-img" src="images/yes.png">
                             </span>
                         </li>
                         <li id="list2" class="mdl-list__item" onclick="changeLog(2, 'DOKUMEN A')">
@@ -140,14 +133,7 @@ limitations under the License
                             </span>
                             <div class="mdl-layout-spacer"></div>
                             <span class="mdl-list__item-secondary-action">
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option21" style="margin-right: 30px">
-                                    <img class="verification-img" src="images/yes.png">
-                                    <input type="radio" id="option21" name="option2" class="mdl-radio__button">
-                                </label>
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option22" style="text-align: right">
-                                    <img class="verification-img" src="images/no.png">
-                                    <input type="radio" id="option22" name="option2" class="mdl-radio__button" checked>
-                                </label>
+                                <img class="verification-img" src="images/yes.png">
                             </span>
                         </li>
                         <li id="list3" class="mdl-list__item" onclick="changeLog(3, 'DOKUMEN B')">
@@ -157,14 +143,7 @@ limitations under the License
                             </span>
                             <div class="mdl-layout-spacer"></div>
                             <span class="mdl-list__item-secondary-action">
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option31" style="margin-right: 30px">
-                                    <img class="verification-img" src="images/yes.png">
-                                    <input type="radio" id="option31" name="option3" class="mdl-radio__button">
-                                </label>
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option32" style="text-align: right">
-                                    <img class="verification-img" src="images/no.png">
-                                    <input type="radio" id="option32" name="option3" class="mdl-radio__button" checked>
-                                </label>
+                                <img class="verification-img" src="images/yes.png">
                             </span>
                         </li>
                         <li id="list4" class="mdl-list__item" onclick="changeLog(4, 'DOKUMEN C')">
@@ -174,57 +153,37 @@ limitations under the License
                             </span>
                             <div class="mdl-layout-spacer"></div>
                             <span class="mdl-list__item-secondary-action">
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option41" style="margin-right: 30px">
-                                    <img class="verification-img" src="images/yes.png">
-                                    <input type="radio" id="option41" name="option4" class="mdl-radio__button">
-                                </label>
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option42" style="text-align: right">
-                                    <img class="verification-img" src="images/no.png">
-                                    <input type="radio" id="option42" name="option4" class="mdl-radio__button" checked>
-                                </label>
+                                <img class="verification-img" src="images/yes.png">
                             </span>
                         </li>
                     </ul>
                     <div class="mdl-layout-spacer"></div>
-                    <div class="verification-submit">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal">
-                            Submit
-                        </button>
-                    </div>
                 </div>
                 <div class="mdl-cell mdl-cell--4-col grimps-white">
                     <div class="grimps-header grimps-blue log-header">
                         <div id="log-title" class="grimps-text-plain" style="font-size: 20px;">LOG KEHADIRAN SEMINAR</div>
                     </div>
                     <div id="log1" class="grimps-text-lato grimps-content">
-                        <span>Add some notes...</span><br><br>
-                        <textarea></textarea>
-                        <br><br><hr><br>
-                        <span>Previous log</span><br><br>
+                        <img class="verification-log-img" src="images/yes.png"><span>5 Januari 2016 10.48 </span>
+                        <textarea disabled>Mantap</textarea><br><br>
                         <img class="verification-log-img" src="images/no.png"><span>2 Januari 2016 10.48 </span>
                         <textarea disabled>Kurang 2 lagi</textarea>
                     </div>
                     <div id="log2" class="grimps-text-lato grimps-content">
-                        <span>Add some notes...</span><br><br>
-                        <textarea></textarea>
-                        <br><br><hr><br>
-                        <span>Previous log</span><br><br>
+                        <img class="verification-log-img" src="images/yes.png"><span>5 Januari 2016 10.48 </span>
+                        <textarea disabled>Mantap</textarea><br><br>
                         <img class="verification-log-img" src="images/yes.png"><span>2 Januari 2016 10.48 </span>
                         <textarea disabled>Sudah OK</textarea>
                     </div>
                     <div id="log3" class="grimps-text-lato grimps-content">
-                        <span>Add some notes...</span><br><br>
-                        <textarea></textarea>
-                        <br><br><hr><br>
-                        <span>Previous log</span><br><br>
+                        <img class="verification-log-img" src="images/yes.png"><span>5 Januari 2016 10.48 </span>
+                        <textarea disabled>Mantap</textarea><br><br>
                         <img class="verification-log-img" src="images/no.png"><span>2 Januari 2016 10.48 </span>
                         <textarea disabled>Mohon cek bagian daftar isi</textarea>
                     </div>
                     <div id="log4" class="grimps-text-lato grimps-content">
-                        <span>Add some notes...</span><br><br>
-                        <textarea></textarea>
-                        <br><br><hr><br>
-                        <span>Previous log</span><br><br>
+                        <img class="verification-log-img" src="images/yes.png"><span>5 Januari 2016 10.48 </span>
+                        <textarea disabled>Mantap</textarea><br><br>
                         <img class="verification-log-img" src="images/yes.png"><span>2 Januari 2016 10.48 </span>
                         <textarea disabled>Sudah OK</textarea>
                     </div>

@@ -46,6 +46,7 @@ limitations under the License
     <link rel="stylesheet" href="public/css/material.min.css" />
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="public/css/grimps.css">
+    <link rel="stylesheet" href="public/js/jquery-ui-1.12.1.custom/jquery-ui.css">
     <style>
     #view-source {
         position: fixed;
@@ -70,7 +71,7 @@ limitations under the License
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="grimps-white grimps-text-alcu demo-header mdl-layout__header mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-                <div class="grimps-text-title"><i class="material-icons mdl-badge">create</i> BUILD SCHEDULE</div>
+                <div class="grimps-text-title"><i class="material-icons mdl-badge">content_paste</i> NOTES</div>
                 <div class="mdl-layout-spacer"></div>
                 <!-- Left aligned menu below button -->
                 <div id="notif" class="material-icons mdl-badge mdl-badge--overlap" data-badge="5" style="margin-right: 30px">
@@ -89,13 +90,13 @@ limitations under the License
                 <div class="user-info">
                     <img src="images/user.jpg" class="demo-avatar">
                     <div>
-                        <span class="grimps-text-lato grimps-text-big">Hillary</span><br>
-                        <span>Admin</span>
+                        <span class="grimps-text-lato grimps-text-big">Rangga</span><br>
+                        <span>Student</span>
                     </div>
                 </div>
                 <div class="demo-avatar-dropdown">
                     <div class="mdl-layout-spacer"></div>
-                    <span>hillary@example.com</span>
+                    <span class="email" title="ranggaeuy224@example.com">ranggaeuy224@example.com</span>
                     <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                         <i class="material-icons" role="presentation">arrow_drop_down</i>
                         <span class="visuallyhidden">Accounts</span>
@@ -108,34 +109,37 @@ limitations under the License
                 <hr>
             </header>
             <nav class="grimps-text-alcu grimps-text-title demo-navigation mdl-navigation">
-                <a class="mdl-navigation__link grimps-text-plain" href="verifikasi.html"><i class="material-icons">assignment</i>VERIFICATION</a>
-                <a class="mdl-navigation__link grimps-text-plain" href="index.html"><i class="material-icons">alarm</i>CALENDAR</a>
-                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href=""><i class="material-icons">create</i>BUILD</a>
+                <a class="mdl-navigation__link grimps-text-plain" href="mhs-jadwalsidang.html"><i class="material-icons">list</i>EXAM SCHEDULE</a>
+                <a class="mdl-navigation__link grimps-text-plain" href="mhs-status.html"><i class="material-icons">verified_user</i>STATUS</a>
+                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="mhs-notes.html"><i class="material-icons">content_paste</i>NOTES</a>
             </nav>
         </div>
         <main class="mdl-layout__content grimps-plain">
-   
-                <div class="grimps-border-top"></div>
-                <p></p>
-                <br/>
-                <br/>
-                <div class="grimps-text-center grimps-text-large grimps-text-alcu">
-                    <center>This will automatically</center>
-                </div>
-                <div class="grimps-text-center grimps-text-large grimps-text-alcu">
-                    <p><center>build schedule for all participants</center></p>
-                </div>
-                <br/><br/>
-                <CENTER>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal">
-                        Submit
-                    </button>
-                </CENTER>
-  
+            <div class="mdl-grid mdl-grid--no-spacing">
+                  <div class="grimps-border-top"></div>
+                 <table class="mdl-data-table mdl-js-data-table">
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric" width="130%">
+                          <div class="grimps-text-large grimps-text-blue">Change Schedule</div><br>
+                          <div class="grimps-text-medium grimps-text-black grimps-text-lato-medium">"Implementasi Algo XXX" - <i>Rangga / 13514068</i></div>
+                          <div class="grimps-text-big grimps-text-blUe">Move to</div>
+                          <div class="grimps-text-medium grimps-text-lato">Saturday, 12 November 2016</div>
+                          <div class="grimps-text-medium grimps-text-lato">14.00</div>
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric td-status">
+                            <div class="status-close"><i class="material-icons">close</i></div><br>
+                            <div class="grimps-text-medium grimps-text-lato grimps-text-red">Pending</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
     </div>
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/material.min.js"></script>
-    <script src="public/js/verification.js"></script>
+    <script src="public/js/notes.js"></script>
+    <script src="public/js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 </body>
 </html>
