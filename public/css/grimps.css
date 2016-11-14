@@ -24,6 +24,20 @@
 .hidden {
     display: none;
 }
+
+.mdl-menu__item img {
+    height: 65px;
+    width: 65px;
+    margin-left: -15px;
+}
+
+.mdl-menu__item span {
+    padding: 10px;
+}
+
+.mdl-menu__item {
+    display: flex;
+}
 /****************************
  END OF GENERAL
 ****************************/
