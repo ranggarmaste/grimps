@@ -61,7 +61,7 @@ for (var i = 0; i < students.length; i++) {
     $('.verification-list').append(html);
 }
 
-$('.verification-list li').click(function() {
+$('.verification-list > li').click(function() {
     location = "tu-13514068.html";
 });
 

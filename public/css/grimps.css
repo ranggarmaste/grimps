@@ -203,10 +203,9 @@ label[for="search"]:after {
 }
 
 .exam-description-card-dsn {
-    width: 93%;
+    width: 100%;
     min-height: 825px;
     background-color: white;
-    margin: 30px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -220,9 +219,9 @@ label[for="search"]:after {
     padding: 15px;
 }
 
-.exam-date h2 {
+.exam-date h3 {
     color: #fef6e0;
-    margin: 0px;
+    margin-top: 5px;
     letter-spacing: 2px;
 }
 
@@ -241,7 +240,7 @@ label[for="search"]:after {
     color: white;
     padding-top: 30px;
     padding-left: 20px;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .date-list .mdl-navigation__link {
