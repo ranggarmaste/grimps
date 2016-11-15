@@ -113,7 +113,7 @@ limitations under the License
                 <a class="mdl-navigation__link grimps-text-plain" href="tu-verifikasi.html"><i class="material-icons">assignment</i>VERIFICATION</a>
             </nav>
         </div>
-        <main class="mdl-layout__content grimps-plain">
+        <main class="mdl-layout__content grimps-plain" id="main">
 
                 <div class="grimps-border-top"></div>
                 <p></p>
@@ -126,11 +126,20 @@ limitations under the License
                     <p><center>build schedule for all participants</center></p>
                 </div>
                 <br/><br/>
-                <form action="tu-calendar.html">
+                <form>
                 <CENTER>
-                    <button type="Submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal">
+                    <button type="Submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" onclick="buildload()">
                         Submit
                     </button>
+                    <script>
+                    function buildload() {
+                        setTimeout(function() {window.location = "tu-calendar.html"}, 5000);
+                        document.getElementById("main").innerHTML = "<!-- MDL Progress Bar with Indeterminate Progress -->"
+                        +"<div id=\"p2\" class=\"mdl-progress mdl-js-progress mdl-progress__indeterminate\"></div>";
+
+                    }
+                    </script>
+                        
                 </CENTER>
                 </form>
         </main>
