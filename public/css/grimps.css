@@ -184,10 +184,7 @@ hr {
     height: calc(100vh - 64px) !important;
 }
 
-.verification-search .mdl-textfield {
-    font-size: 20px !important;
-}
-.mdl-textfield__label::after {
+label[for="search"]:after {
     background-color: white;
 }
 /***************************
@@ -270,6 +267,69 @@ hr {
 ****************************/
 
 /***************************
+ FIRST PAGE
+****************************/
+
+.header-title {
+    margin: 0 auto;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.login-button {
+    height: 200px;
+    width: 200px;
+    margin: 75px;
+    background-color: #03192f;
+    color: #d79a08;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+    -moz-transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+.login-button:hover {
+    background-color: #d79a08;
+    color: #03192f;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.login-button span {
+    vertical-align: -100px;
+}
+
+.first-body {
+    overflow: hidden;
+}
+
+.logo-first-page img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    margin-top: -20px;
+}
+
+.logo-first-page h1 {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: -90px;
+}
+
+/***************************
+ END OF FIRST PAGE
+****************************/
+
+/***************************
  NOTES
 ****************************/
 
@@ -321,3 +381,13 @@ hr {
 /***************************
  END OF NOTES
 ****************************/
+
+/*.dhx_month_head {
+    background-color: #FEF6E2 !important;
+    border-bottom: solid 1px #CECECE;
+}
+
+.dhx_month_body:hover {
+    cursor: pointer;
+    background-color: #FEF6E2 !important;
+}*/
