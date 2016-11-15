@@ -184,10 +184,7 @@ hr {
     height: calc(100vh - 64px) !important;
 }
 
-.verification-search .mdl-textfield {
-    font-size: 20px !important;
-}
-.mdl-textfield__label::after {
+label[for="search"]:after {
     background-color: white;
 }
 /***************************
@@ -321,3 +318,13 @@ hr {
 /***************************
  END OF NOTES
 ****************************/
+
+/*.dhx_month_head {
+    background-color: #FEF6E2 !important;
+    border-bottom: solid 1px #CECECE;
+}
+
+.dhx_month_body:hover {
+    cursor: pointer;
+    background-color: #FEF6E2 !important;
+}*/

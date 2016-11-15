@@ -65,7 +65,7 @@ $('li').click(function() {
     location = "tu-13514068.html";
 });
 
-$('#sample1').bind('input', function() {
+$('#search').bind('input', function() {
     var key = $(this).val();
     $('.verification-list').empty();
     for (var i = 0; i < students.length; i++) {
@@ -87,8 +87,3 @@ $('#sample1').bind('input', function() {
         location = "tu-13514068.html";
     });
 });
-
-
-
-
-
