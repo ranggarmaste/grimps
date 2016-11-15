@@ -63,63 +63,39 @@ limitations under the License
 </style>
 </head>
 <body>
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="grimps-white grimps-text-alcu demo-header mdl-layout__header mdl-color-text--grey-600">
-            <div class="mdl-layout__header-row">
-                <div class="grimps-text-title"><i class="material-icons mdl-badge">home</i> First Page</div>
-                <div class="mdl-layout-spacer"></div>
-                <!-- Left aligned menu below button -->
-                
-                <div class="grimps-text-title">GRIMPS</div>
+    <div class="mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-cell--12-col-desktop">
+            <div class="grimps-header grimps-violet verification-header grimps-text-lato">
+                <div class="header-title grimps-text-plain grimps-text-big">WELCOME</div>
             </div>
-        </header>
-        <div class="grimps-blue demo-drawer mdl-layout__drawer mdl-color-text--blue-grey-50">
-            <header class="demo-drawer-header grimps-text-plain">
-                <div class="user-info">
-                    <img src="images/account-circle.png" class="demo-avatar">
-                    <div>
-                        <span class="grimps-text-lato grimps-text-big">WELCOME</span><br>
-                        <span>User</span>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <main class="login-buttons">
+                    <div class="login-button">
+                        <span class="grimps-text-title" onclick="window.location='tu-login.html'">TU IF</span>
                     </div>
-                </div>
-            </header>
-            <nav class="grimps-text-alcu grimps-text-title demo-navigation mdl-navigation">
-                <a class="mdl-navigation__link grimps-text-plain" href="tu-login.html"><i class="material-icons">fiber_manual_record</i>ADMIN</a>
-                <a class="mdl-navigation__link grimps-text-plain" href="dsn-login.html"><i class="material-icons">fiber_manual_record</i>LECTURER</a>
-                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="mhs-login.html"><i class="material-icons">fiber_manual_record</i>STUDENT</a>
-            </nav>
+                    <br/>
+                    <br/>
+                    <div class="login-button" onclick="window.location='dsn-login.html'">
+                        <span class="grimps-text-title">LECTURER</span>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="login-button" onclick="window.location='mhs-login.html'">
+                        <span class="grimps-text-title">STUDENT</span>
+                    </div>
+                </main>
+                <script src="public/js/jquery.min.js"></script>
+                <script src="public/js/material.min.js"></script>
+                <script src="public/js/first-page.js"></script>
         </div>
-        <main class="mdl-layout__content grimps-plain">
-            <div class="mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell--12-col-desktop">
-                    <div class="grimps-header grimps-violet verification-header grimps-text-lato">
-                        <div class="grimps-text-plain grimps-text-big">SELECT USER</div>
-                    </div>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div style="padding: 100px 100px 100px 500px">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" style="margin-right: 300px" onclick="window.location='tu-login.html'">
-                                TU IF
-                            </button>
-                            <br/>
-                            <br/>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" style="margin-right: 300px" onclick="window.location='dsn-login.html'">
-                                LECTURER
-                            </button>
-                            <br/>
-                            <br/>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" style="margin-right: 300px" onclick="window.location='mhs-login.html'">
-                                STUDENT
-                            </button>
-                        </div>
-                        <script src="public/js/jquery.min.js"></script>
-                        <script src="public/js/material.min.js"></script>
-                        <script src="public/js/verification.js"></script>
-                </div>
-            </div>
-        </main>
     </div>
 </body>
 </html>
