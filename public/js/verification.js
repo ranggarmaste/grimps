@@ -10,7 +10,7 @@ var students = [
         title: 'Using Big Data to Defeat Clinton'
     },
     {
-        sid: '13514101',
+        sid: '13510911',
         name: 'Hillary Clinton',
         title: 'How to Delete E-mails'
     },
@@ -61,7 +61,7 @@ for (var i = 0; i < students.length; i++) {
     $('.verification-list').append(html);
 }
 
-$('li').click(function() {
+$('.verification-list > li').click(function() {
     location = "tu-13514068.html";
 });
 
@@ -83,7 +83,7 @@ $('#search').bind('input', function() {
             $('.verification-list').append(html);
         }
     }
-    $('li').click(function() {
+    $('.verification-list > li').click(function() {
         location = "tu-13514068.html";
     });
 });

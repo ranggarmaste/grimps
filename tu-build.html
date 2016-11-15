@@ -73,7 +73,7 @@ limitations under the License
                 <div class="grimps-text-title"><i class="material-icons mdl-badge">create</i> BUILD SCHEDULE</div>
                 <div class="mdl-layout-spacer"></div>
                 <!-- Left aligned menu below button -->
-                <div id="notif" class="material-icons mdl-badge mdl-badge--overlap" data-badge="5" style="margin-right: 30px">
+                <div id="notif" class="material-icons mdl-badge mdl-badge--overlap" data-badge="3" style="margin-right: 30px">
                     notifications
                 </div>
                 <ul class="grimps-text-lato mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="notif">
@@ -101,7 +101,7 @@ limitations under the License
                         <span class="visuallyhidden">Accounts</span>
                     </button>
                     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-                        <li class="mdl-menu__item" onclick="window.location='tu-profil.html'">Profile</li>
+<!--                        <li class="mdl-menu__item">Profile</li>-->
                         <li class="mdl-menu__item" onclick="window.location='tu-login.html'">Logout</li>
                     </ul>
                 </div>
@@ -113,7 +113,7 @@ limitations under the License
                 <a class="mdl-navigation__link grimps-text-plain" href="tu-verifikasi.html"><i class="material-icons">assignment</i>VERIFICATION</a>
             </nav>
         </div>
-        <main class="mdl-layout__content grimps-plain" id="main">
+        <main class="mdl-layout__content grimps-plain">
 
                 <div class="grimps-border-top"></div>
                 <p></p>
@@ -126,22 +126,11 @@ limitations under the License
                     <p><center>build schedule for all participants</center></p>
                 </div>
                 <br/><br/>
-                <form>
                 <CENTER>
-                    <button type="Submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" onclick="buildload()">
-                        Submit
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" onclick="window.location='tu-calendar.html'">
+                        BUILD
                     </button>
-                    <script>
-                    function buildload() {
-                        setTimeout(function() {window.location = "tu-calendar.html"}, 5000);
-                        document.getElementById("main").innerHTML = "<!-- MDL Progress Bar with Indeterminate Progress -->"
-                        +"<div id=\"p2\" class=\"mdl-progress mdl-js-progress mdl-progress__indeterminate\"></div>";
-
-                    }
-                    </script>
-                        
                 </CENTER>
-                </form>
         </main>
     </div>
     <script src="public/js/jquery.min.js"></script>
