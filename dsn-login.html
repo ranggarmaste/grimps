@@ -66,10 +66,10 @@ limitations under the License
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="grimps-white grimps-text-alcu demo-header mdl-layout__header mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-                <div class="grimps-text-title"><i class="material-icons mdl-badge">vpn_key</i> Supervisor & Examiner Login</div>
+                <div class="grimps-text-title"><i class="material-icons mdl-badge">vpn_key</i> LECTURER LOGIN</div>
                 <div class="mdl-layout-spacer"></div>
                 <!-- Left aligned menu below button -->
-                
+                <img src="images/logo2.png" style="width: 48px; margin-right: 15px;">
                 <div class="grimps-text-title">GRIMPS</div>
             </div>
         </header>
@@ -78,8 +78,9 @@ limitations under the License
                 <div class="user-info">
                     <img src="images/account-circle.png" class="demo-avatar">
                     <div>
-                        <span class="grimps-text-lato grimps-text-big">Welcome</span><br>
-                        <span>Lecturer Supervisor/Examiner</span>
+                        <span class="grimps-text-lato grimps-text-big">WELCOME</span><br>
+                        <span>Lecturer</span>
+                        <span>Examiner/Supervisor</span>
                     </div>
                 </div>
             </header>
@@ -90,40 +91,47 @@ limitations under the License
             </nav>
         </div>
         <main class="mdl-layout__content grimps-plain">
+            <div class="grimps-header grimps-violet verification-header grimps-text-lato">
+                <div class="grimps-text-plain grimps-text-big">PLEASE LOGIN</div>
+            </div>
             <div class="mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell--12-col-desktop">
-                    <div class="grimps-header grimps-violet verification-header grimps-text-lato">
-                        <div class="grimps-text-plain grimps-text-big">PLEASE LOGIN</div>
-                    </div>
-                    <form action="#" style="padding: 50px 50px 0 300px">
-                      
-                      <font style="font-size:17px">Employee number&ensp;&ensp;&ensp;</font>
-                      <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="text" id="sample1">
-                        <label class="mdl-textfield__label" for="sample1">Insert your employee number...</label>
-                      </div>
-                      <br/>
-                      
-                      <font style="font-size:17px">Password&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</font>
-                      <div class="mdl-textfield mdl-js-textfield">
-                        <input class="mdl-textfield__input" type="password" id="sample1">
-                        <label class="mdl-textfield__label" for="sample1">Enter a password</label>
-                      </div>
-                      <br/>
-                      
+                <div class="mdl-cell mdl-cell--3-col">
+                    <!--- Nothing -->
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <form action="dsn-isi-constraints.html" style="padding: 30px 0">
+                        <table class="registration">
+                            <tr>
+                                <td><label style="font-size:17px" for="sample1">Employee Number</label></td>
+                                <td>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="text" id="sample1" required>
+                                        <label class="mdl-textfield__label" for="sample1">Insert your employee number...</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label style="font-size:17px" for="sample2">Password</label></td>
+                                <td>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="password" id="sample2" required>
+                                        <label class="mdl-textfield__label" for="sample2">Insert your password...</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="text-align: right; margin-top: 30px">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal">
+                                LOGIN
+                            </button>
+                        </div>
                     </form>
-                    <div class="mdl-layout-spacer"></div>
-                    <div class="verification-submit">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" style="margin-right: 300px" onclick="window.location='dsn-isi-constraints.html'">
-                            Login
-                        </button>
-                    <script src="public/js/jquery.min.js"></script>
-                    <script src="public/js/material.min.js"></script>
-                    <script src="public/js/verification.js"></script>
-                    </div>
                 </div>
             </div>
         </main>
     </div>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/material.min.js"></script>
+    <script src="public/js/verification.js"></script>
 </body>
 </html>

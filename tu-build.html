@@ -114,9 +114,11 @@ limitations under the License
             </nav>
         </div>
         <main class="mdl-layout__content grimps-plain">
-
+                
+                <div id="hilang">
                 <div class="grimps-border-top"></div>
-                <p></p>
+                <!-- MDL Progress Bar with Indeterminate Progress -->
+<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate" style="margin: 0 auto; width: 100%"></div>
                 <br/>
                 <br/>
                 <div class="grimps-text-center grimps-text-large grimps-text-alcu-big">
@@ -127,14 +129,16 @@ limitations under the License
                 </div>
                 <br/><br/>
                 <CENTER>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" onclick="window.location='tu-calendar.html'">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal" onclick="loading()">
                         BUILD
                     </button>
                 </CENTER>
+                </div>
+                
         </main>
     </div>
     <script src="public/js/jquery.min.js"></script>
     <script src="public/js/material.min.js"></script>
-    <script src="public/js/verification.js"></script>
+    <script src="public/js/build.js"></script>
 </body>
 </html>
