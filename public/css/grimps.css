@@ -381,6 +381,14 @@ label[for="search"]:after {
  END OF NOTES
 ****************************/
 
+.registration {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.registration td {
+    padding: 0;
+}
 /*.dhx_month_head {
     background-color: #FEF6E2 !important;
     border-bottom: solid 1px #CECECE;
