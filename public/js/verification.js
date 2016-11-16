@@ -83,7 +83,7 @@ $('#search').bind('input', function() {
             $('.verification-list').append(html);
         }
     }
-    $('.verification-list > li').click(function() {
+    $('.verification-list li').click(function() {
         location = "tu-13514068.html";
     });
 });
