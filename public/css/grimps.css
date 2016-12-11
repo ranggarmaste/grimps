@@ -389,12 +389,17 @@ label[for="search"]:after {
 .registration td {
     padding: 0;
 }
-/*.dhx_month_head {
-    background-color: #FEF6E2 !important;
+
+.dhx_month_head {
+    background-color: #FFF3A1 !important;
     border-bottom: solid 1px #CECECE;
 }
 
 .dhx_month_body:hover {
     cursor: pointer;
+    background-color: #FFF3A1 !important;
+}
+
+.dhx_cal_event_line_start:hover {
     background-color: #FEF6E2 !important;
-}*/
+}
