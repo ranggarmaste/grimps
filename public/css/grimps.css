@@ -265,6 +265,10 @@ label[for="search"]:after {
     background-color: lightgrey;
     color: black;
 }
+
+.center-desc {
+    margin-top: 20px;
+}
 /***************************
  END OF EXAM SCHEDULE
 ****************************/
