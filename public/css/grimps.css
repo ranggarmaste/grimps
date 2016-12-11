@@ -136,6 +136,10 @@ hr {
     margin-bottom: 0;
 }
 
+.demo-navigation {
+    width: 100%;
+}
+
 /***************************
  END OF DASHBOARD
 ****************************/
@@ -192,7 +196,7 @@ label[for="search"]:after {
 ****************************/
 
 /***************************
- EXAM SCHEDULE
+ DEFENSE SCHEDULE
 ****************************/
 .exam-description-card-mhs {
     width: 50%;
