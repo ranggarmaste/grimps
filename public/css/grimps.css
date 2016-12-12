@@ -19,6 +19,7 @@
 
 #notif {
     cursor: pointer;
+    font-size: 32px;
 }
 
 .hidden {
@@ -136,6 +137,10 @@ hr {
     margin-bottom: 0;
 }
 
+.demo-navigation {
+    width: 100%;
+}
+
 /***************************
  END OF DASHBOARD
 ****************************/
@@ -192,7 +197,7 @@ label[for="search"]:after {
 ****************************/
 
 /***************************
- EXAM SCHEDULE
+ DEFENSE SCHEDULE
 ****************************/
 .exam-description-card-mhs {
     width: 50%;
@@ -260,6 +265,10 @@ label[for="search"]:after {
 .date-list .selected {
     background-color: lightgrey;
     color: black;
+}
+
+.center-desc {
+    margin-top: 20px;
 }
 /***************************
  END OF EXAM SCHEDULE
