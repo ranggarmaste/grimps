@@ -86,7 +86,7 @@ limitations under the License
             <nav class="grimps-text-alcu grimps-text-title demo-navigation mdl-navigation">
                 <a class="mdl-navigation__link grimps-text-plain" href="index.html"><i class="material-icons">home</i>HOME</a>
                 <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="mhs-registration.html"><i class="material-icons">description</i>REGISTRATION</a>
-                <a class="mdl-navigation__link grimps-text-plain" href="mhs-login.html"><i class="material-icons">vpn_key</i>LOGIN</a>
+                <a class="mdl-navigation__link grimps-text-plain" href="login.html"><i class="material-icons">vpn_key</i>LOGIN</a>
             </nav>
         </div>
         <main class="mdl-layout__content grimps-plain">
@@ -100,21 +100,27 @@ limitations under the License
                 <div class="mdl-cell mdl-cell--6-col">
                     <form action="#" style="padding: 30px 0">
                         <table class="registration">
+                            
+                            <tr>
+                                <td><label style="font-size:17px" for="sample2">Student Number</label></td>
+                                <td>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" type="text" id="sample2" onchange="fullname()" required>
+                                        <label class="mdl-textfield__label" for="sample2">Insert your SID...</label>
+                                    </div>
+                                </td>
+                                <script>
+                                    function fullname() {
+                                        document.getElementById("fullname").innerHTML="<font style=\"color:black\">Rangga Garmastweira</font>";
+                                        }
+                                </script>
+                            </tr>
                             <tr>
                                 <td><label style="font-size:17px" for="sample1">Name</label></td>
                                 <td>
                                     <div class="mdl-textfield mdl-js-textfield">
                                         <input class="mdl-textfield__input" type="text" id="sample1">
-                                        <label class="mdl-textfield__label" for="sample1">Insert your full name...</label>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><label style="font-size:17px" for="sample2">Student Number</label></td>
-                                <td>
-                                    <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="text" id="sample2" required>
-                                        <label class="mdl-textfield__label" for="sample2">Insert your SID...</label>
+                                        <label class="mdl-textfield__label" for="sample1"><span id="fullname">Insert your full name...</span></label>
                                     </div>
                                 </td>
                             </tr>
@@ -158,8 +164,15 @@ limitations under the License
                                 <td><label style="font-size:17px" for="sample7">Supervisor 1</label></td>
                                 <td>
                                     <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="text" id="sample7">
-                                        <label class="mdl-textfield__label" for="sample7">Mention your supervisor 1</label>
+                                        <select class="mdl-textfield__input" name="supervisor1" required>
+                                            <option disabled selected>Select your supervisor 1</option>
+                                            <option value="Dessy">Dessy Puji</option>
+                                            <option value="Ulfah">Nur Ulfah M</option>
+                                            <option value="Masayu">Masayu</option>
+                                            <option value="Rinaldi">Rinaldi Munir</option>
+                                        </select>
+                                        <!--<input class="mdl-textfield__input" type="text" id="sample7">
+                                        <label class="mdl-textfield__label" for="sample7">Mention your supervisor 1</label>-->
                                     </div>
                                 </td>
                             </tr>
@@ -167,8 +180,13 @@ limitations under the License
                                 <td><label style="font-size:17px" for="sample8">Supervisor 2</label></td>
                                 <td>
                                     <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="text" id="sample8">
-                                        <label class="mdl-textfield__label" for="sample8">Mention your supervisor 2 (optional)</label>
+                                        <select class="mdl-textfield__input" name="supervisor2" required>
+                                            <option disabled selected>Select your supervisor 2 (optional)</option>
+                                            <option value="Dessy">Dessy Puji</option>
+                                            <option value="Ulfah">Nur Ulfah M</option>
+                                            <option value="Masayu">Masayu</option>
+                                            <option value="Rinaldi">Rinaldi Munir</option>
+                                        </select>
                                     </div>
                                 </td>
                             </tr>
@@ -218,7 +236,6 @@ limitations under the License
                         </script>
                         <script src="public/js/jquery.min.js"></script>
                         <script src="public/js/material.min.js"></script>
-                        <script src="public/js/verification.js"></script>
                     </div>
                 </div>
             </div>

@@ -60,13 +60,38 @@ limitations under the License
     margin-bottom: 40px;
     z-index: 900;
 }
+
+#tengah {
+    overflow: hidden;
+    text-align: center;
+}
+#tengah:before,
+#tengah:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+
+}
+#tengah:before {
+    right: 0.5em;
+    margin-left: -50%;
+
+}
+#tengah:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
 </style>
 </head>
 <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="grimps-white grimps-text-alcu demo-header mdl-layout__header mdl-color-text--grey-600">
             <div class="mdl-layout__header-row">
-                <div class="grimps-text-title"><i class="material-icons mdl-badge">vpn_key</i> TU IF LOGIN</div>
+                <div class="grimps-text-title"><i class="material-icons mdl-badge">vpn_key</i> LOGIN</div>
                 <div class="mdl-layout-spacer"></div>
                 <!-- Left aligned menu below button -->
                 <img src="images/logo2.png" style="width: 48px; margin-right: 15px;">
@@ -79,14 +104,13 @@ limitations under the License
                     <img src="images/account-circle.png" class="demo-avatar">
                     <div>
                         <span class="grimps-text-lato grimps-text-big">WELCOME</span><br>
-                        <span>Student</span>
+                        <span></span>
                     </div>
                 </div>
             </header>
             <nav class="grimps-text-alcu grimps-text-title demo-navigation mdl-navigation">
-                <a class="mdl-navigation__link grimps-text-plain" href="index.html"><i class="material-icons">home</i>HOME</a>
-                <a class="mdl-navigation__link grimps-text-plain" href="mhs-registration.html"><i class="material-icons">description</i>REGISTRATION</a>
-                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="mhs-login.html"><i class="material-icons">vpn_key</i>LOGIN</a>
+                <!--<a class="mdl-navigation__link grimps-text-plain" href="index.html"><i class="material-icons">home</i>HOME</a>-->
+                <a class="mdl-navigation__link grimps-text-plain grimps-selected" href="login.html"><i class="material-icons">vpn_key</i>LOGIN</a>
             </nav>
         </div>
         <main class="mdl-layout__content grimps-plain">
@@ -98,14 +122,14 @@ limitations under the License
                     <!--- Nothing -->
                 </div>
                 <div class="mdl-cell mdl-cell--6-col">
-                    <form action="mhs-jadwalsidang.html" style="padding: 30px 0">
+                    <form style="padding: 30px 0">
                         <table class="registration">
                             <tr>
-                                <td><label style="font-size:17px" for="sample1">Student ID</label></td>
+                                <td><label style="font-size:17px" for="sample1">Student/Employee ID</label></td>
                                 <td>
                                     <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="text" id="sample1" required>
-                                        <label class="mdl-textfield__label" for="sample1">Insert your SID...</label>
+                                        <input class="mdl-textfield__input" type="text" id="id" required>
+                                        <label class="mdl-textfield__label" for="sample1">Insert your Student/Employee ID...</label>
                                     </div>
                                 </td>
                             </tr>
@@ -113,24 +137,51 @@ limitations under the License
                                 <td><label style="font-size:17px" for="sample2">Password</label></td>
                                 <td>
                                     <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="password" id="sample2" required>
+                                        <input class="mdl-textfield__input" type="password" id="pw" required>
                                         <label class="mdl-textfield__label" for="sample2">Insert your password...</label>
                                     </div>
                                 </td>
                             </tr>
                         </table>
                         <div style="text-align: right; margin-top: 30px">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal">
+                            <button type="submit" onclick="return hai()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored grimps-violet show-modal">
                                 LOGIN
                             </button>
+                            <SCRIPT>
+                            function hai() {
+                                var id = document.getElementById("id").value;
+                                var pw = document.getElementById("pw").value;
+                                if (id == "mahasiswa" && pw == "abcd") {
+                                    window.location = "mhs-jadwalsidang.html";
+                                    return false;
+                                } else
+                                if (id == "dosen" && pw == "efgh") {
+                                    window.location = "dsn-isi-constraints.html";
+                                    return false;
+                                } else
+                                if (id == "tuif" && pw == "ijkl") {
+                                    window.location = "tu-calendar.html";
+                                    return false;
+                                } else {
+                                    alert("Wrong ID or password.");
+                                }
+                            }
+                            </SCRIPT>
                         </div>
                     </form>
+                    <!--REGISTER-->
+                    <center>
+                    <div id="tengah">OR</div><br/>
+                    <div style="font-size: 15px">
+                    <a href = "mhs-registration.html">Student Register</a> | 
+                    <a href = "dsn-registration.html">Lecture Register</a>
+                    </div> 
+                    </center>
                 </div>
+
             </div>
         </main>
     </div>
-    <script src="public/js/jquery.min.js"></script>
     <script src="public/js/material.min.js"></script>
-    <script src="public/js/verification.js"></script>
 </body>
 </html>

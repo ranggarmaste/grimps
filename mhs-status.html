@@ -203,6 +203,20 @@ limitations under the License
             <button type="button" class="mdl-button close">No</button>
         </div>
     </dialog>
+
+    <!--FIREBASE-->
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAQOZapIZBys9Zkl2tbrTSB9hngY6j64vU",
+	    authDomain: "wbd-hebat.firebaseapp.com",
+	    databaseURL: "https://wbd-hebat.firebaseio.com",
+	    storageBucket: "wbd-hebat.appspot.com",
+	    messagingSenderId: "703907389788"
+	  };
+	  firebase.initializeApp(config);
+	</script>
     <script>
         var dialog = document.querySelector('dialog');
         var showModalButton = document.querySelector('.show-modal');
