@@ -48,6 +48,15 @@
     margin-top: -20px;
     height: 20px;
 }
+
+.login-form {
+    border: solid 2px #8493C7;
+    border-radius: 5px;
+    padding: 30px 20px 30px 20px;
+    margin: 10px 0;
+    opacity: 0;
+    position: relative;
+}
 /****************************
  END OF GENERAL
 ****************************/
