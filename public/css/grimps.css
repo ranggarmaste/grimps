@@ -19,6 +19,7 @@
 
 #notif {
     cursor: pointer;
+    font-size: 32px;
 }
 
 .hidden {
@@ -136,6 +137,10 @@ hr {
     margin-bottom: 0;
 }
 
+.demo-navigation {
+    width: 100%;
+}
+
 /***************************
  END OF DASHBOARD
 ****************************/
@@ -159,8 +164,8 @@ hr {
 }
 
 .verification-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .verification-log-img {
@@ -192,7 +197,7 @@ label[for="search"]:after {
 ****************************/
 
 /***************************
- EXAM SCHEDULE
+ DEFENSE SCHEDULE
 ****************************/
 .exam-description-card-mhs {
     width: 50%;
@@ -260,6 +265,10 @@ label[for="search"]:after {
 .date-list .selected {
     background-color: lightgrey;
     color: black;
+}
+
+.center-desc {
+    margin-top: 20px;
 }
 /***************************
  END OF EXAM SCHEDULE
@@ -389,12 +398,17 @@ label[for="search"]:after {
 .registration td {
     padding: 0;
 }
-/*.dhx_month_head {
-    background-color: #FEF6E2 !important;
+
+.dhx_month_head {
+    background-color: #FFF3A1 !important;
     border-bottom: solid 1px #CECECE;
 }
 
 .dhx_month_body:hover {
     cursor: pointer;
+    background-color: #FFF3A1 !important;
+}
+
+.dhx_cal_event_line_start:hover {
     background-color: #FEF6E2 !important;
-}*/
+}
