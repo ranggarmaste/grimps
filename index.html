@@ -95,20 +95,28 @@ html {
                 <p style="font-size: 17px">Gumi | Rangga | Ikhwan | Malvin </p>
                 </center>
                 <main class="login-buttons">
-                    <div class="login-button" onclick="window.location='tu-login.html'">
-                        <span class="grimps-text-title">TU IF</span>
+                    <div class="login-button" onclick="window.location='login.html'">
+                        <span class="grimps-text-title">LOGIN</span>
                     </div>
                     <br/>
                     <br/>
-                    <div class="login-button" onclick="window.location='dsn-login.html'">
-                        <span class="grimps-text-title">LECTURER</span>
+                    <div id="register">
+                    <div class="login-button" onclick="register()">
+                        <span class="grimps-text-title">REGISTER</span>
                     </div>
-                    <br/>
-                    <br/>
-                    <div class="login-button" onclick="window.location='mhs-login.html'">
-                        <span class="grimps-text-title">STUDENT</span>
                     </div>
                 </main>
+                <SCRIPT>
+                function register() {
+                	document.getElementById("register").innerHTML =
+					"<br/> <button onclick=\"window.location='mhs-registration.html'\" class=\"mdl-button mdl-js-button mdl-button--raised mdl-button--colored\">"
+					  +"Student Registration"
+					+"</button><br/><br/>"
+					+"<button onclick=\"window.location='dsn-registration.html'\" class=\"mdl-button mdl-js-button mdl-button--raised mdl-button--colored\">"
+					  +"Lecturer Registration"
+					+"</button>";
+                }
+                </SCRIPT>
                 <script src="public/js/jquery.min.js"></script>
                 <script src="public/js/material.min.js"></script>
                 <script src="public/js/first-page.js"></script>
