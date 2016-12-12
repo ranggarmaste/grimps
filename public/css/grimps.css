@@ -39,6 +39,15 @@
 .mdl-menu__item {
     display: flex;
 }
+
+.error-span {
+    color: red;
+}
+
+.error {
+    margin-top: -20px;
+    height: 20px;
+}
 /****************************
  END OF GENERAL
 ****************************/

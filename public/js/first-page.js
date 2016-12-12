@@ -1,8 +1,8 @@
 $(document).ready(function() {
     
     $(".logo-first-page").hide().fadeIn("slow");
-    $(".login-button").animate({
-        top: '-=50px',
+    $(".login-form").animate({
+        top: '-=10px',
         opacity: '1'
     }, 800);
 });

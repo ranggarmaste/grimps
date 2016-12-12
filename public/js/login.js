@@ -1,16 +1,23 @@
-function login() {
-    var id = document.getElementsById("id").value;
-    var pw = document.getElementsById("pw").value;
-    alert(id+" "+pw);
-    if (id == "mahasiswa" && pw=="abcd") {
-        window.location="mhs-jadwalsidang.html";
+var hid = true;
+$(".error-span").hide();
+
+function hai() {
+    var id = document.getElementById("id").value;
+    if (id == "mahasiswa") {
+        window.location = "mhs-jadwalsidang.html";
+        return false;
     } else
-    if (id=="dosen" && pw=="efgh") {
-        window.location =  "dsn-isi-constraints.html";
+    if (id == "dosen") {
+        window.location = "dsn-isi-constraints.html";
+        return false;
     } else
-    if (id=="tuif" && pw=="ijkl") {
-        window.location = "tu-calendar.html";
+    if (id == "tuif") {
+        window.location = "tu-add.html";
+        return false;
     } else {
-        alert("Wrong ID or password.");
+        if (hid) {
+            $(".error-span").fadeIn();
+        }
+        return false;
     }
 }
