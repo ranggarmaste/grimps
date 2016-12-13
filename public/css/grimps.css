@@ -430,3 +430,10 @@ label[for="search"]:after {
 .dhx_cal_event_line_start:hover {
     background-color: #FEF6E2 !important;
 }
+
+.pdf-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
