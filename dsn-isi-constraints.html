@@ -240,8 +240,8 @@ limitations under the License
                         <SCRIPT>
                         function confirm() {
                           document.getElementById("confirm").innerHTML = "<p style=\"font-size:13px\">Continue?</p>"
-                        +"<span onclick=\"window.location='dsn-calendar.html'\">Yes</span>"
-                        +"&ensp;&ensp;<span onclick=\"cancelit()\">Cancel</span>";
+                        +"<button class='btn-confirm mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect grimps-text-alcu' onclick=\"window.location='dsn-calendar.html'\" style='color: white'>Yes</button>"
+                        +"&ensp;<button class='btn-reject mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect grimps-text-alcu' onclick='cancelit()' style='color: white'>Cancel</button>";
                         }
                         function cancelit() {
                           document.getElementById("confirm").innerHTML="";
